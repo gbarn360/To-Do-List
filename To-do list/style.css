@@ -1,0 +1,149 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: Calibri;
+}
+
+#header {
+    padding: 20px;
+    background: rgb(115, 193, 146);
+    color: rgb(245, 246, 245);
+    letter-spacing: 2px;
+    text-align: center;
+
+    height: 70px;
+}
+
+#month {
+    background: rgb(245, 246, 245);
+
+    text-align: center;
+    font-size: 50px;
+    color: rgb(68, 72, 68);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-color: rgb(115,193,146);
+
+
+    letter-spacing: 2px;
+    font-size: 70px;
+
+}
+#btn{
+    background:rgb(115,193,146) ;
+    color: rgb(245, 246, 245);
+    right: auto;
+    padding: 10px 12px;
+    margin: 5px;
+    font-size: large;
+    position: relative;
+    margin-left: 90%;
+    border-radius: .5em;
+    border: none;
+}
+#removeBtn{
+    background:rgb(115,193,146) ;
+    color: rgb(245, 246, 245);
+    right: auto;
+    padding: 10px 12px;
+    margin: 5px;
+    font-size: large;
+    position: absolute;
+    border-radius: .5em;
+    border: none;
+}
+.calenderWrap{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background: rgb(245, 246, 245);
+}
+
+.day h2{
+    text-align: center;
+}
+.day{
+    padding-top: 2px;
+    padding-bottom: 700px;
+    margin:5px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+    border:solid rgb(115,193,146) 5px;
+    border-radius: .5em;
+    color:rgb(68, 72, 68) ;
+    padding-left: 10px;
+
+
+}
+.day input{
+    width: 1.5em;
+    height: 1.5em;
+    padding-inline: 4px;
+}
+
+.day ul{
+    list-style-type: none;
+    font-size: .9em;
+
+}
+#task{
+    background: rgb(245, 246, 245);
+    /*background: rgb(253,253,243);*/
+
+}
+.modal #exit{
+    position: absolute;
+    padding: .5em;
+    color: rgb(68, 72, 68) ;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    right: 1em;
+    top: .5em;
+    background: transparent;
+}
+.modal{
+
+    display: none;
+    position: absolute;
+    padding: 20px 50px 70px 50px;
+    margin-left: 35%;
+    margin-right: 22%;
+    text-align: center;
+    animation:fadein 0.3s;
+    background: rgb(245, 246, 245);
+    border:solid rgb(115,193,146) 5px;
+    color:rgb(68, 72, 68) ;
+    border-radius: 2em;
+
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.modal #text{
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 20px;
+    background: rgb(245, 246, 245);
+}
+.modal h2{
+    padding: 10px;
+
+}
+
+.modal #submit{
+    position: absolute;
+    padding: 3px;
+    padding-bottom: 12px;
+    background: rgb(245, 246, 245);
+    color: rgb(68, 72, 68);
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do list</title>
+    <link  rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div id = "ta">
+
+</div>
+<div id = "header">
+    <h1> TASKS </h1>
+</div>
+
+<div id = "task">
+    <h2 id = "month"></h2>
+    <input id = "btn" type="button" onclick="addTask()" value="add task">
+    <input id ="removeBtn" type = "button" onclick="removeTask()" value="remove task">
+</div>
+
+<div class = "modal" id = "myModal">
+    <input id = "exit" type = "button" value = "X" onclick="exit()">
+
+    <h2>Select day(s)</h2>
+<form id = "form" >
+    <input id = "test" name="Sunday" type = "checkbox" >
+    <label>Sunday</label>
+
+    <input name="Monday" type = "checkbox">
+    <label>Monday</label>
+
+    <input name="Tuesday" type = "checkbox">
+    <label>Tuesday</label>
+
+    <input name="Wednesday" type = "checkbox">
+    <label>Wednesday</label>
+
+    <input name="Thursday" type = "checkbox">
+    <label>Thursday</label>
+
+    <input name="Friday" type = "checkbox">
+    <label>Friday</label>
+
+    <input class = "test" name="Saturday" type = "checkbox">
+    <label>Saturday</label>
+</form>
+    <h2>Enter task</h2>
+    <input type = "text" id = "text">
+    <input id = "submit" type = "submit" onclick="insertTask()">
+
+
+
+</div>
+
+<div class = calenderWrap>
+
+    <div class = "day">
+        <h2>Sunday</h2>
+        <ul id = "sunday">
+        </ul>
+    </div>
+
+    <div class = "day">
+        <h2>Monday</h2>
+        <ul id = "monday">
+
+        </ul>
+    </div >
+
+    <div class = "day">
+        <h2>Tuesday</h2>
+        <ul id = "tuesday">
+
+        </ul>
+    </div>
+
+    <div class = "day">
+        <h2>Wednesday</h2>
+        <ul id = "wednesday">
+
+        </ul>
+    </div>
+
+    <div class = "day">
+        <h2>Thursday</h2>
+        <ul id = "thursday">
+
+        </ul>
+    </div>
+
+    <div class = "day">
+        <h2>Friday</h2>
+        <ul id = "friday">
+
+        </ul>
+    </div>
+
+    <div class = "day">
+        <h2>Saturday</h2>
+        <ul id = "saturday">
+
+        </ul>
+    </div>
+
+</div>
+
+</body>
+<script src = js.js></script>
+</html>
